@@ -1,23 +1,25 @@
-import './../polyfills';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-import { BComponent } from './b.component';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("./../polyfills");
+var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
+var http_1 = require("@angular/common/http");
+var b_component_1 = require("./b.component");
 var BModule = /** @class */ (function () {
     function BModule() {
     }
     BModule.decorators = [
-        { type: NgModule, args: [{
+        { type: core_1.NgModule, args: [{
                     imports: [
-                        CommonModule,
-                        HttpClientModule
+                        common_1.CommonModule,
+                        http_1.HttpClientModule
                     ],
                     declarations: [
-                        BComponent
+                        b_component_1.BComponent
                     ],
-                    entryComponents: [BComponent]
+                    entryComponents: [b_component_1.BComponent]
                 },] },
     ];
     return BModule;
 }());
-export default BModule;
+exports.default = BModule;
